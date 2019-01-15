@@ -1,0 +1,20 @@
+type Query{
+    users:[User!]!
+}
+type Mutation{
+    createUser(data:UserCreateInput!):AuthPayload!
+    updateUserPassword(password:String!):User
+}
+type AuthPayload{
+    user:User!
+    token:String!
+}
+
+input UserCreateInput{
+    email:String!
+    password:String!
+}
+type User{
+    email:String!
+    password:String!
+}
