@@ -1,0 +1,20 @@
+{
+  "name": "AuthenticationGraphQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "get-schema":"graphql get-schema",
+    "start":"nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "graphql-yoga": "^1.17.0",
+    "jsonwebtoken": "^8.4.0",
+    "prisma-binding": "^2.2.14"
+  }
+}
